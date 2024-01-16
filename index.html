@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <title>Amar Fazlić - Projects</title>
+</head>
+<body>
+    <main>
+        <section class="hero background-filter">
+            <h2 class="non-blurred">Hi, my name is <i id="github-portfolio">Amar Fazlić</i></h2>
+            <h3 class="non-blurred">Welcome to my Project Portofolio</h3>
+            <div class="non-blurred down-arrow"></div>
+        </section>
+    
+        <section class="uptime">
+            <div class="container">
+            <div class="imgBx">
+                <img src="images/uptime/1.png" alt="Uptime img 1">
+            </div>
+            <div class="details">
+                <div class="content">
+                    <h2>Uptime iOS App <br>
+                        <span>Website Monitoring Application</span>
+                    </h2>
+                    <p>
+                        Uptime is a REST API based Website monitoring iOS Application. 
+                        It was developed over a course of 2 months. 
+                        It contains many functionalities such as: Registration and Login, Adding "monitors" - websites, 
+                        Creating Monitor groups, Checking Monitor statuses, Removing Monitors                        
+                    </p>
+                    <p class="uptime-images">Images:
+                        <span class="blue active" data-color-primary="#2196f3" data-color-sec="#5eb4fb" data-pic="images/uptime/2.png">1</span>
+                        <span class="black" data-color-primary="#000" data-color-sec="#212121" data-pic="images/uptime/1.png">2</span>
+                        <span class="orange" data-color-primary="#CE5B39" data-color-sec="#F18557" data-pic="images/uptime/3.png">3</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        </section>
+    
+        <section class="green">
+          <h3 class="center-me">LastFM Client</h3>
+          <p class="center-me" id="lastfm-description"style="margin-bottom: 25px;">List of all countries, our current country is on top. Searching for countries</p>
+          <div class="video-container">
+            <a class="video-slider, videobox">
+              <div class="video-slide">
+                <video>
+                  <source src="images\lastfm\video-1.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="video-slide">
+                <video>
+                  <source src="images\lastfm\video-2.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="video-slide">
+                <video>
+                  <source src="images\lastfm\video-3.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="video-slide">
+                <video>
+                  <source src="images\lastfm\video-4.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="video-slide">
+                <video>
+                  <source src="images\lastfm\video-5.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="video-slide">
+                <video>
+                  <source src="images\lastfm\video-6.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="video-slide">
+                <video>
+                  <source src="images\lastfm\video-7.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="video-slide">
+                <video>
+                  <source src="images\lastfm\video-8.mp4" type="video/mp4">
+                </video>
+              </div>
+            </a>
+          
+          
+            <button class="video-slider-btn left-side" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="video-slider-btn right-side" onclick="plusDivs(1)">&#10095;</button>
+          </div>
+        </section>
+
+    
+        <section class="indigo">
+          <div class="project-container">
+            <div class="item" id="1">
+              <img src="images/projects/twitter.jpg" alt="">
+              <div class="text">
+                <h3>Twitter Clone</h4>
+                <p>iOS Application</p>
+              </div>
+              <div class="button">Learn More</div>
+            </div>
+      
+            <div class="item" id="2">
+              <img src="images/projects/solidity-school.png" alt="">
+              <div class="text">
+                <h3>Open Source Contribution</h4>
+                <p>Solidity Web3</p>
+              </div>
+              <div class="button">Learn More</div>
+            </div>
+      
+            <div class="item" id="3">
+              <img src="images/projects/sevdah.jpg" alt="">
+              <div class="text">
+                  <h3>Sevdah Music Generator (NLP)</h4>
+                <p>Machine Learning</p>
+                </div>
+                <div class="button">Learn More</div>
+            </div>
+      
+            <div class="item" id="4">
+              <img src="images/projects/journal.jpg" alt="">
+              <div class="text">
+                <h3>Academic Journal Submission System</h4>
+                <p>Web Application</p>
+              </div>
+              <div class="button">Learn More</div>
+            </div>
+        </div>
+      
+        <!-- Modal -->
+        <div id="preview" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="img" src="">
+            <div id="details">
+              <h3 id="title"></h3>
+              <p id="info"></p>
+                <i class="fab fa-github-square" id="github"></i>
+            </div>
+          </div>
+        </div>
+      
+        </section>
+    
+        <section class="gray">
+          <div class="main-social">
+            <a href="https://github.com/amar-exe" target="_blank" class="nav-item">
+              <div class="nav-links">
+                <i class="fab fa-github"></i>
+              </div>
+              <span class="nav-link-text">Github</span>
+            </a>
+            <a href="https://www.linkedin.com/in/amar-fazlic" target="_blank" class="nav-item">
+              <div class="nav-links transition-all">
+                <i class="fab fa-linkedin-in"></i>
+              </div>
+              <span class="nav-link-text">LinkedIn</span>
+            </a>
+            <a href="mailto:amarfazlic@yahoo.com" target="_blank" class="nav-item">
+              <div class="nav-links transition-all">
+                <i class="fa fa-envelope"></i>
+              </div>
+              <span class="nav-link-text">E-mail</span>
+            </a>
+            <a href="https://www.instagram.com/amar.exe/" target="_blank" class="nav-item">
+              <div class="nav-links transition-all">
+                <i class="fab fa-instagram"></i>
+              </div>
+              <span class="nav-link-text">Instagram</span>
+            </a>
+          </div>
+        </section>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
