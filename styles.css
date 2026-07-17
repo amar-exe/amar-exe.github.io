@@ -135,6 +135,16 @@ main {
     padding: 72px 0 24px;
 }
 
+.portrait {
+    float: right;
+    width: 132px;
+    height: 132px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 6px 0 16px 28px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
 .intro h1 {
     font-family: "Newsreader", Georgia, serif;
     font-weight: 500;
@@ -335,6 +345,14 @@ main {
 @media (max-width: 560px) {
     .intro {
         padding-top: 48px;
+    }
+
+    .portrait {
+        float: none;
+        display: block;
+        margin: 0 0 24px;
+        width: 108px;
+        height: 108px;
     }
 
     .timeline li {
