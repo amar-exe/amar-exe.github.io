@@ -3,192 +3,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amar Fazlić — iOS Engineer</title>
+    <meta name="description" content="Amar Fazlić is an iOS engineer based in Sarajevo, currently building ICA Banken's iOS app. Previously: healthcare apps with 2M+ users at Klika.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <title>Amar Fazlić - Projects</title>
+    <script>
+      // Set theme before first paint to avoid a flash.
+      (function () {
+        var saved = localStorage.getItem("theme");
+        if (saved === "dark" || (!saved && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      })();
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JSR1HG3VN4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-JSR1HG3VN4');
+    </script>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JSR1HG3VN4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-JSR1HG3VN4');
-</script>
 <body>
+    <header class="site-header">
+        <span class="wordmark">Amar Fazlić</span>
+        <button id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <nav id="site-nav">
+            <a href="#experience">Experience</a>
+            <a href="#work">Work</a>
+            <a href="#research">Research</a>
+            <a href="#contact">Contact</a>
+            <button id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+                <svg class="icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <svg class="icon-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            </button>
+        </nav>
+        <div id="nav-backdrop"></div>
+    </header>
+
     <main>
-        <section class="hero background-filter">
-            <h2 class="non-blurred">Hi, my name is <i id="github-portfolio">Amar Fazlić</i></h2>
-            <h3 class="non-blurred">Welcome to my Project Portofolio</h3>
-            <div class="non-blurred down-arrow"></div>
-        </section>
-    
-        <section class="uptime">
-            <div class="container">
-            <div class="imgBx">
-                <img src="images/uptime/1.png" alt="Uptime img 1">
-            </div>
-            <div class="details">
-                <div class="content">
-                    <h2>Uptime iOS App <br>
-                        <span>Website Monitoring Application</span>
-                    </h2>
-                    <p>
-                        Uptime is a REST API based Website monitoring iOS Application. 
-                        It was developed over a course of 2 months. 
-                        It contains many functionalities such as: Registration and Login, Adding "monitors" - websites, 
-                        Creating Monitor groups, Checking Monitor statuses, Removing Monitors                        
-                    </p>
-                    <p class="uptime-images">Images:
-                        <span class="blue active" data-color-primary="#2196f3" data-color-sec="#5eb4fb" data-pic="images/uptime/2.png">1</span>
-                        <span class="black" data-color-primary="#000" data-color-sec="#212121" data-pic="images/uptime/1.png">2</span>
-                        <span class="orange" data-color-primary="#CE5B39" data-color-sec="#F18557" data-pic="images/uptime/3.png">3</span>
-                    </p>
-                </div>
-            </div>
-        </div>
-        </section>
-    
-        <section class="green">
-          <h3 class="center-me">LastFM Client</h3>
-          <p class="center-me" id="lastfm-description"style="margin-bottom: 25px;">List of all countries, our current country is on top. Searching for countries</p>
-          <div class="video-container">
-            <a class="video-slider, videobox">
-              <div class="video-slide">
-                <video>
-                  <source src="images\lastfm\video-1.mp4" type="video/mp4">
-                </video>
-              </div>
-              <div class="video-slide">
-                <video>
-                  <source src="images\lastfm\video-2.mp4" type="video/mp4">
-                </video>
-              </div>
-              <div class="video-slide">
-                <video>
-                  <source src="images\lastfm\video-3.mp4" type="video/mp4">
-                </video>
-              </div>
-              <div class="video-slide">
-                <video>
-                  <source src="images\lastfm\video-4.mp4" type="video/mp4">
-                </video>
-              </div>
-              <div class="video-slide">
-                <video>
-                  <source src="images\lastfm\video-5.mp4" type="video/mp4">
-                </video>
-              </div>
-              <div class="video-slide">
-                <video>
-                  <source src="images\lastfm\video-6.mp4" type="video/mp4">
-                </video>
-              </div>
-              <div class="video-slide">
-                <video>
-                  <source src="images\lastfm\video-7.mp4" type="video/mp4">
-                </video>
-              </div>
-              <div class="video-slide">
-                <video>
-                  <source src="images\lastfm\video-8.mp4" type="video/mp4">
-                </video>
-              </div>
-            </a>
-          
-          
-            <button class="video-slider-btn left-side" onclick="plusDivs(-1)">&#10094;</button>
-            <button class="video-slider-btn right-side" onclick="plusDivs(1)">&#10095;</button>
-          </div>
+        <section class="intro">
+            <h1>iOS engineer building banking, healthcare, and IoT-connected apps.</h1>
+            <p class="lede">
+                I'm Amar — a software engineer from Sarajevo with four years of experience shipping
+                apps people rely on daily. Right now I work on the iOS app of
+                <a href="https://www.icabanken.se" target="_blank" rel="noopener">ICA Banken</a>,
+                one of Sweden's retail banks. Before that I spent three years at Klika on a healthcare
+                platform serving over two million users, connecting medical devices over Bluetooth.
+            </p>
+            <p class="lede secondary">
+                My core tools are Swift and SwiftUI, with Flutter close behind. I also hold a
+                Master's in Data Science and have published research on NLP and smart IoT systems.
+            </p>
         </section>
 
-    
-        <section class="indigo">
-          <div class="project-container">
-            <div class="item" id="1">
-              <img src="images/projects/twitter.jpg" alt="">
-              <div class="text">
-                <h3>Twitter Clone</h4>
-                <p>iOS Application</p>
-              </div>
-              <div class="button">Learn More</div>
-            </div>
-      
-            <div class="item" id="2">
-              <img src="images/projects/solidity-school.png" alt="">
-              <div class="text">
-                <h3>Open Source Contribution</h4>
-                <p>Solidity Web3</p>
-              </div>
-              <div class="button">Learn More</div>
-            </div>
-      
-            <div class="item" id="3">
-              <img src="images/projects/sevdah.jpg" alt="">
-              <div class="text">
-                  <h3>Sevdah Music Generator (NLP)</h4>
-                <p>Machine Learning</p>
-                </div>
-                <div class="button">Learn More</div>
-            </div>
-      
-            <div class="item" id="4">
-              <img src="images/projects/journal.jpg" alt="">
-              <div class="text">
-                <h3>Academic Journal Submission System</h4>
-                <p>Web Application</p>
-              </div>
-              <div class="button">Learn More</div>
-            </div>
-        </div>
-      
-        <!-- Modal -->
-        <div id="preview" class="modal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <img id="img" src="">
-            <div id="details">
-              <h3 id="title"></h3>
-              <p id="info"></p>
-                <i class="fab fa-github-square" id="github"></i>
-            </div>
-          </div>
-        </div>
-      
+        <section id="experience" class="section">
+            <h2>Experience</h2>
+            <ol class="timeline">
+                <li>
+                    <div class="when">2025 —</div>
+                    <div class="what">
+                        <h3>iOS Engineer · Zendev <span class="context">for ICA Banken</span></h3>
+                        <p>Developing the bank's flagship iOS app with a focus on secure data traffic.
+                        Own the consents and loyalty systems integration end to end, working directly
+                        with designers, the product owner, and platform teams.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="when">2022 — 2025</div>
+                    <div class="what">
+                        <h3>iOS Engineer · Klika</h3>
+                        <p>Three years on an enterprise healthcare app with 2M+ active users: BLE device
+                        pairing and firmware updates, a major redesign, migration to Clean Architecture,
+                        and App Store release responsibilities. Also consulted on an advertising SDK
+                        serving millions of ads daily, and mentored the company's mobile internship guild.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="when">2024 — 2026</div>
+                    <div class="what">
+                        <h3>Freelance · Fullstack &amp; Mobile</h3>
+                        <p>Delivered systems for clients in Bosnia and the US — from a vending-machine
+                        fleet platform to a gig-economy hiring product. Details below.</p>
+                    </div>
+                </li>
+            </ol>
         </section>
-    
-        <section class="gray">
-          <div class="main-social">
-            <a href="https://github.com/amar-exe" target="_blank" class="nav-item">
-              <div class="nav-links">
-                <i class="fab fa-github"></i>
-              </div>
-              <span class="nav-link-text">Github</span>
-            </a>
-            <a href="https://www.linkedin.com/in/amar-fazlic" target="_blank" class="nav-item">
-              <div class="nav-links transition-all">
-                <i class="fab fa-linkedin-in"></i>
-              </div>
-              <span class="nav-link-text">LinkedIn</span>
-            </a>
-            <a href="mailto:amarfazlic@yahoo.com" target="_blank" class="nav-item">
-              <div class="nav-links transition-all">
-                <i class="fa fa-envelope"></i>
-              </div>
-              <span class="nav-link-text">E-mail</span>
-            </a>
-            <a href="https://www.instagram.com/amar.exe/" target="_blank" class="nav-item">
-              <div class="nav-links transition-all">
-                <i class="fab fa-instagram"></i>
-              </div>
-              <span class="nav-link-text">Instagram</span>
-            </a>
-          </div>
+
+        <section id="work" class="section">
+            <h2>Selected work</h2>
+            <div class="work-list">
+                <article>
+                    <h3>Vending fleet management system</h3>
+                    <p class="meta">PHP · JavaScript · Flutter · BLE · NFC</p>
+                    <p>End-to-end platform running 1,000+ vending machines across 10 cities: real-time
+                    inventory, BI dashboards for machine profitability, and a Flutter app field workers
+                    use to sign in at machines via NFC and talk to them over Bluetooth.</p>
+                </article>
+                <article>
+                    <h3>Gig-economy moving platform</h3>
+                    <p class="meta">Web · Kotlin / Jetpack Compose · Swift</p>
+                    <p>Hiring and workforce management platform for a US moving company — think
+                    ridesharing, but for movers with trucks. Built the web platform, automated legal
+                    document generation, and native Android and iOS apps for drivers.</p>
+                </article>
+                <article>
+                    <h3>AI CV Tailor</h3>
+                    <p class="meta">Python · Streamlit · Ollama · WeasyPrint</p>
+                    <p>Local-first LLM tool that tailors a master CV to any job description with
+                    structured output and templated PDF generation. Fully offline — no personal
+                    data leaves the machine.</p>
+                </article>
+                <article>
+                    <h3>Sevdah lyric generation</h3>
+                    <p class="meta">NLP · LSTM · BERT</p>
+                    <p>The first NLP study of Bosnian Sevdalinka folk lyrics — collected the corpus and
+                    compared LSTM approaches against fine-tuned BERT. Presented at IAT 2024.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="research" class="section">
+            <h2>Research</h2>
+            <ul class="pub-list">
+                <li>
+                    <a href="https://link.springer.com/chapter/10.1007/978-3-032-05159-2_7" target="_blank" rel="noopener">
+                        Designing Smart IoT System for Urban Waste Collection in Sarajevo
+                    </a>
+                    <span class="pub-venue">Springer LNNS vol. 1625 · IAT 2025</span>
+                </li>
+                <li>
+                    <a href="https://link.springer.com/chapter/10.1007/978-3-031-71694-2_41" target="_blank" rel="noopener">
+                        Safet AIsović: Comparison of Methods for Generating Sevdah Music Lyrics
+                    </a>
+                    <span class="pub-venue">Springer · IAT 2024</span>
+                </li>
+            </ul>
+            <p class="aside">MSc in Data Science, International Burch University. Thesis on multimodal
+            meme sentiment analysis.</p>
+        </section>
+
+        <section id="contact" class="section contact">
+            <h2>Get in touch</h2>
+            <p>The fastest way to reach me is email. iOS and mobile are where I'm strongest,
+            but I'm also open to work in AI/ML and fullstack — if the project is interesting,
+            I want to hear about it.</p>
+            <ul class="contact-links">
+                <li><a href="mailto:amarfazlic@yahoo.com">amarfazlic@yahoo.com</a></li>
+                <li><a href="https://github.com/amar-exe" target="_blank" rel="noopener">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/amar-fazlic" target="_blank" rel="noopener">LinkedIn</a></li>
+            </ul>
         </section>
     </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Amar Fazlić · Sarajevo</p>
+    </footer>
+
+    <script>
+      (function () {
+        var nav = document.getElementById("site-nav");
+        var toggle = document.getElementById("nav-toggle");
+        var backdrop = document.getElementById("nav-backdrop");
+
+        function setMenu(open) {
+          nav.classList.toggle("open", open);
+          backdrop.classList.toggle("visible", open);
+          toggle.setAttribute("aria-expanded", open);
+        }
+
+        toggle.addEventListener("click", function () {
+          setMenu(!nav.classList.contains("open"));
+        });
+        backdrop.addEventListener("click", function () { setMenu(false); });
+        nav.querySelectorAll("a").forEach(function (link) {
+          link.addEventListener("click", function () { setMenu(false); });
+        });
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape") setMenu(false);
+        });
+      })();
+
+      document.getElementById("theme-toggle").addEventListener("click", function () {
+        var root = document.documentElement;
+        var dark = root.getAttribute("data-theme") === "dark";
+        root.setAttribute("data-theme", dark ? "light" : "dark");
+        localStorage.setItem("theme", dark ? "light" : "dark");
+      });
+    </script>
 </body>
-<script src="script.js"></script>
 </html>
