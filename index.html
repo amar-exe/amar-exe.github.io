@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amar Fazlić — iOS Engineer</title>
-    <meta name="description" content="Amar Fazlić is an iOS engineer based in Sarajevo, currently building ICA Banken's iOS app. Previously: healthcare apps with 2M+ users at Klika.">
+    <title>Amar Fazlić — Software Engineer</title>
+    <meta name="description" content="Amar Fazlić is a fullstack software engineer based in Sarajevo working with Python (FastAPI, Django), React, and PostgreSQL. Currently building ICA Banken's iOS app; previously healthcare apps with 2M+ users at Klika.">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Amar Fazlić — iOS Engineer">
-    <meta property="og:description" content="iOS engineer building banking, healthcare, and IoT-connected apps. Based in Sarajevo.">
+    <meta property="og:title" content="Amar Fazlić — Software Engineer">
+    <meta property="og:description" content="Fullstack software engineer working with Python, React, and PostgreSQL, plus native mobile apps. Based in Sarajevo.">
     <meta property="og:url" content="https://amar-exe.github.io/">
     <meta property="og:image" content="https://amar-exe.github.io/images/og.jpg">
     <meta name="twitter:card" content="summary_large_image">
@@ -37,6 +37,7 @@
 <body>
     <header class="site-header">
         <span class="wordmark">Amar Fazlić</span>
+        <a class="cv-button" href="Amar_Fazlic_CV.pdf" download>Download CV</a>
         <button id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
         </button>
@@ -56,17 +57,24 @@
     <main>
         <section class="intro">
             <img class="portrait" src="images/portrait.jpg" alt="Amar Fazlić" width="640" height="640">
-            <h1>iOS engineer building banking, healthcare, and IoT-connected apps.</h1>
+            <h1>Software engineer building fullstack products with Python and React.</h1>
             <p class="lede">
                 I'm Amar — a software engineer from Sarajevo with four years of experience shipping
-                apps people rely on daily. Right now I work on the iOS app of
+                software people rely on daily. Right now I work on the iOS app of
                 <a href="https://www.icabanken.se" target="_blank" rel="noopener">ICA Banken</a>,
                 one of Sweden's retail banks. Before that I spent three years at Klika on a healthcare
                 platform serving over two million users, connecting medical devices over Bluetooth.
             </p>
             <p class="lede secondary">
-                My core tools are Swift and SwiftUI, with Flutter close behind. I also hold a
-                Master's in Data Science and have published research on NLP and smart IoT systems.
+                For fullstack work my stack is Python and React: FastAPI and Django on the backend,
+                PostgreSQL for data, React and TypeScript on the front end, and the Claude SDK for
+                LLM features. I also build native mobile apps in Swift, Kotlin, and Flutter.
+            </p>
+            <p class="lede secondary">
+                As a freelancer I've delivered complete systems, from database to mobile app: a platform
+                running 1,000+ vending machines, a workforce marketplace for a US moving company, and
+                an online store with card payments. I also hold a Master's in Data Science and have
+                published research on NLP and smart IoT systems.
             </p>
         </section>
 
@@ -76,28 +84,30 @@
                 <li>
                     <div class="when">2025 —</div>
                     <div class="what">
-                        <h3>iOS Engineer · Zendev <span class="context">for ICA Banken</span></h3>
+                        <h3>Software Engineer · Zendev <span class="context">for ICA Banken</span></h3>
                         <p>Developing the bank's flagship iOS app with a focus on secure data traffic.
                         Own the consents and loyalty systems integration end to end, working directly
                         with designers, the product owner, and platform teams.</p>
                     </div>
                 </li>
                 <li>
+                    <div class="when">2024 — 2026</div>
+                    <div class="what">
+                        <h3>Fullstack Engineer · Freelance</h3>
+                        <p>Built and delivered complete systems for clients in Bosnia and the US:
+                        PHP and SQL backends, web frontends, BI dashboards, card payments compliant
+                        with PCI DSS and 3D Secure, and the Android, iOS, and Flutter apps that go
+                        with them. Details below.</p>
+                    </div>
+                </li>
+                <li>
                     <div class="when">2022 — 2025</div>
                     <div class="what">
-                        <h3>iOS Engineer · Klika</h3>
+                        <h3>Software Engineer · Klika</h3>
                         <p>Three years on an enterprise healthcare app with 2M+ active users: BLE device
                         pairing and firmware updates, a major redesign, migration to Clean Architecture,
                         and App Store release responsibilities. Also consulted on an advertising SDK
                         serving millions of ads daily, and mentored the company's mobile internship guild.</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="when">2024 — 2026</div>
-                    <div class="what">
-                        <h3>Freelance · Fullstack &amp; Mobile</h3>
-                        <p>Delivered systems for clients in Bosnia and the US — from a vending-machine
-                        fleet platform to a gig-economy hiring product. Details below.</p>
                     </div>
                 </li>
             </ol>
@@ -108,9 +118,10 @@
             <div class="work-list">
                 <article>
                     <h3>Vending fleet management system</h3>
-                    <p class="meta">PHP · JavaScript · Flutter · BLE · NFC</p>
-                    <p>End-to-end platform running 1,000+ vending machines across 10 cities: real-time
-                    inventory, BI dashboards for machine profitability, and a Flutter app field workers
+                    <p class="meta">PHP · SQL · JavaScript · Flutter · BLE · NFC</p>
+                    <p>End-to-end platform running 1,000+ vending machines across 10 cities: a PHP
+                    backend with real-time inventory and automated workflows, BI dashboards for
+                    machine profitability built on complex SQL, and a Flutter app field workers
                     use to sign in at machines via NFC and talk to them over Bluetooth.</p>
                 </article>
                 <article>
@@ -119,6 +130,14 @@
                     <p>Hiring and workforce management platform for a US moving company — think
                     ridesharing, but for movers with trucks. Built the web platform, automated legal
                     document generation, and native Android and iOS apps for drivers.</p>
+                </article>
+                <article>
+                    <h3>E-commerce store for a hardware retailer</h3>
+                    <p class="meta">E-commerce · PCI DSS / 3D Secure · Python</p>
+                    <p>Built and maintained an online store for a hardware tools shop: product and
+                    order management, plus card payment processing compliant with PCI DSS and
+                    3D Secure. Automated the work around it in Python — price-comparison scrapers,
+                    social media ad posts, and promo material.</p>
                 </article>
                 <article>
                     <h3>AI CV Tailor</h3>
@@ -158,8 +177,8 @@
 
         <section id="contact" class="section contact">
             <h2>Get in touch</h2>
-            <p>The fastest way to reach me is email. iOS and mobile are where I'm strongest,
-            but I'm also open to work in AI/ML and fullstack — if the project is interesting,
+            <p>The fastest way to reach me is email. I take on fullstack work in Python and
+            React, mobile projects, and AI/ML too — if the project is interesting,
             I want to hear about it.</p>
             <ul class="contact-links">
                 <li><a href="mailto:amarfazlic@yahoo.com">amarfazlic@yahoo.com</a></li>
